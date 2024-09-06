@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+
+    <!-- Tailwind Css -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Font Awsome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+<style>
+#banner{
+    width: 100%;
+    height: 700px;
+    background-image: url("./images/gallery.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+}
+.navbar {
+            backdrop-filter: blur(10px);
+            background-color: rgba(255, 255, 255, 0.2); 
+            transition: background-color 0.3s ease; 
+        }
+
+        .navbar.scrolled {
+            background-color: rgba(29, 45, 216, 0.9); 
+            backdrop-filter: none; 
+        }
+        .para{
+              width: 50%;
+              height: 100px;
+              /* font-size:50px; */
+              color: white;
+              /* font-weight:bolder; */
+              position: absolute;
+              margin-top: 530px;
+              margin-left: 80px;
+            }
+</style>
+</head>
+<body>
+      <!-- Navbar -->
+      <nav id="navbar" class="navbar fixed top-0 left-0 right-0 z-10 p-4 ">
+        <div class="container mx-auto flex justify-between items-center">
+            <a href="#" class="text-white text-lg font-bold">Event Bliss</a>
+            <!-- <div class="hidden md:flex space-x-6"> -->
+                <ul class="flex flex-col p-4 md:p-0 mt-4 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0  ">
+                    <li>
+                        <a href="./Homepage.html" class="text-black  hover:text-gray-300">Home</a>
+                    </li>
+
+
+
+                    <li class="relative group ">
+                        <a href="">
+                        <a  href="./about.html  " class="flex items-center justify-between w-full  text-blak hover:text-gray-300 ">About
+                            <svg class="w-2.5 h-2.5 ml-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"></path>
+                            </svg>
+                        </a>
+                        <!-- Dropdown menu -->
+                        <div class="absolute left-0 z-10 hidden w-44  pt-2 group-hover:block">
+                            <div class=" divide-y divide-gray-100 rounded-lg  ">
+                                <ul class="py-2 text-l text-black  ">
+                                        <a href="./story.html" class="block px-4 py-2  hover:text-gray-300 ">Story</a>
+                                    </li>
+                                    <li>
+                                        <a href="./gallery.html" class="block px-4 py-2   hover:text-gray-300 ">Our Gallery</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+   
+                    <li>
+                        <a href="" class="text-blak hover:text-gray-300 ">Wedding</a>
+                    </li>
+                    <li>
+                        <a href="./booking.html" class="text-black hover:text-gray-300 ">Booking</a>
+                    </li>
+                    <li>
+                        <a href="#" class="text-blak hover:text-gray-300 ">Contact</a>
+                    </li>    
+            </div>
+
+    </nav>
+
+    <div id="banner">
+      <div class="para">
+        <h1 class="text-5xl	font-medium">Event Bliss</h1>
+      <p class="text-white font-medium			text-lg	mt-5">"At Event Bliss, we believe that events have the power to transform, to inspire, and to leave a lasting impression.
+         That's why we're dedicated to crafting unforgettable experiences that exceed our clients' expectations.</p>
+          </div>
+    </div>
+<section class="text-gray-600 body-font">
+          <div class="flex flex-wrap -m-4">
+            <div class="xl:w-1/4 md:w-1/2 p-4">
+              <div class="bg-gray-100 p-6 rounded-lg shadow-2xl">
+                <img class="h-40 rounded w-full object-cover object-center mb-6" src="https://eventsmanagementkerala.com/wp-content/uploads/elementor/thumbs/Kadappuram-Beach-Resort_31th-jan-qcpq6m7snxjuysfp1tuwldiyniunumczacn13gxg60.webp" alt="content">
+                <!-- <h3 class="tracking-widest text-indigo-500 text-xs font-medium title-font">SUBTITLE</h3> -->
+                <h2 class="text-lg text-gray-900 font-medium title-font mb-4">How to choose the perfect Wedding venue in Kerala</h2>
+                <p class=" mt-6 leading-relaxed text-base">Compare and Find the Best Wedding Venues as per your wedding plan.</p>
+                <p class="mt-12"><a class=" text-orange-300" href="">Learn more <i class="fa-solid fa-angles-right"></i></a></p>
+              </div>
+            </div>
+            <div class="xl:w-1/4 md:w-1/2 p-4">
+              <div class="bg-gray-100 p-6 rounded-lg shadow-2xl">
+                <img class="h-40 rounded w-full object-cover object-center mb-6" src="https://cf.bstatic.com/xdata/images/hotel/max1024x768/15267389.jpg?k=97977ba5e33d41baa3d3b952d2fd47fe85c1089e3f4788cbc3c32ea00151f9e3&o=&hp=1" alt="content">
+                <!-- <h3 class="tracking-widest text-indigo-500 text-xs font-medium title-font">SUBTITLE</h3> -->
+                <h2 class="text-lg text-gray-900 font-medium title-font mb-4">Destination Wedding in kumarakom lake Kerala.</h2>
+                <p class="mt-6 leading-relaxed text-base">Kumarakom Lake Resort, acclaimed as the finest luxury heritage resort in India</p>
+                <p class="mt-12"><a class=" text-orange-300" href="">Learn more <i class="fa-solid fa-angles-right"></i></a></p>
+              </div>
+            </div>
+            <div class="xl:w-1/4 md:w-1/2 p-4">
+              <div class="bg-gray-100 p-6 rounded-lg shadow-2xl">
+                <img class="h-40 rounded w-full object-cover object-center mb-6" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRT3cRv9QmAfUXCNJhCJHt_cN5Aecj388BLWQ&s" alt="content">
+                <!-- <h3 class="tracking-widest text-indigo-500 text-xs font-medium title-font">SUBTITLE</h3> -->
+                <h2 class="text-lg text-gray-900 font-medium title-font mb-4">Destination Wedding in Taj Green Cove Resort Kovalam</h2>
+                <p class=" leading-relaxed text-base">Taj Green Cove Resort & Spa is one of the best 5 star resort in Kovalam ideal for beach holidays.</p>
+                <p class="mt-8 "><a class="text-orange-300" href="">Learn more <i class="fa-solid fa-angles-right"></i></a></p>
+              </div>
+            </div>
+            <div class="xl:w-1/4 md:w-1/2 p-4">
+              <div class="bg-gray-100 p-6 rounded-lg shadow-2xl">
+                <img class="h-40 rounded w-full object-cover object-center mb-6" src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/02/78/3b/bb/facade-turtle-on-the.jpg?w=700&h=-1&s=1" alt="content">
+                <!-- <h3 class="tracking-widest text-indigo-500 text-xs font-medium title-font">SUBTITLE</h3> -->
+                <h2 class="text-lg text-gray-900 font-medium title-font mb-4">Destination wedding in Gokulam Grand Turtle on the Beach</h2>
+                <p class="leading-relaxed text-base">Perched near the serene Hawa Beach, Gokulam Grand Turtle on the Beach Resort in Kovalam invites you for a luxurious and blissful holiday experience.</p>
+                <p class="mt-2"><a class=" text-orange-300" href="">Learn more <i class="fa-solid fa-angles-right"></i></a></p>
+              </div>
+            </div>
+          </div>
+      </section>
+
+
+      <section class="text-gray-600 body-font">
+         <!--<div class="container px-5 py-24 mx-auto">
+          <div class="flex flex-wrap w-full mb-20">
+            <div class="lg:w-1/2 w-full mb-6 lg:mb-0">
+              <h1 class="sm:text-3xl text-2xl font-medium title-font mb-2 text-gray-900">Our Blog:</h1>
+              <div class="h-1 w-20 bg-indigo-500 rounded"></div>
+            </div>
+            <p class="lg:w-1/2 w-full leading-relaxed text-gray-500">Melodia Events offers a diverse range of blogs that cover topics related to event management and planning. From destination wedding plannings to corporate events, each blog provides valuable insights to help you plan your next event seamlessly.</p>
+          </div> -->
+          <div class="flex flex-wrap -m-4">
+            <div class="xl:w-1/4 md:w-1/2 p-4">
+              <div class="bg-gray-100 p-6 rounded-lg shadow-2xl">
+                <img class="h-40 rounded w-full object-cover object-center mb-6" src="https://i.pinimg.com/originals/58/98/41/589841df127dca8487135ee9de6262a9.png" alt="content">
+                <!-- <h3 class="tracking-widest text-indigo-500 text-xs font-medium title-font">SUBTITLE</h3> -->
+                <h2 class="text-lg text-gray-900 font-medium title-font mb-4">Kerala Haldi stage Decoration.</h2>
+                <p class=" mt-4 leading-relaxed text-base">Splashes of Tradition: Kerala Haldi Stage Decoration Haldi decoration is an essential</p>
+                <p class="mt-12"><a class=" text-orange-300" href="">Learn more <i class="fa-solid fa-angles-right"></i></a></p>
+              </div>
+            </div>
+            <div class="xl:w-1/4 md:w-1/2 p-4">
+              <div class="bg-gray-100 p-6 rounded-lg shadow-2xl">
+                <img class="h-40 rounded w-full object-cover object-center mb-6" src="https://www.area83.in/ElementImages/a9ec03b3-17df-4f4f-bf7a-23914a79e602-ProdcuctImg.jpg" alt="content">
+                <!-- <h3 class="tracking-widest text-indigo-500 text-xs font-medium title-font">SUBTITLE</h3> -->
+                <h2 class="text-lg text-gray-900 font-medium title-font mb-4">Intimate Wedding in Kerala.</h2>
+                <p class="leading-relaxed text-base">>NO.1 Intimate wedding in Kerala A Global Trend In recent years, Kerala has risen</p>
+                <p class="mt-12"><a class=" text-orange-300" href="">Learn more <i class="fa-solid fa-angles-right"></i></a></p>
+              </div>
+            </div>
+            <div class="xl:w-1/4 md:w-1/2 p-4">
+              <div class="bg-gray-100 p-6 rounded-lg shadow-2xl">
+                <img class="h-40 rounded w-full object-cover object-center mb-6" src="https://i.ytimg.com/vi/unzRVh2r3SE/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLALQDD9M--Qs72_X63eveplMAw1SA" alt="content">
+                <!-- <h3 class="tracking-widest text-indigo-500 text-xs font-medium title-font">SUBTITLE</h3> -->
+                <h2 class="text-lg text-gray-900 font-medium title-font mb-4">Kerala Christian Wedding Rituals And Malayali Procedure.</h2>
+                <p class="leading-relaxed text-base">Timeless Celebration: Kerala Christian Wedding Rituals and Traditions Kerala</p>
+                <p class="mt-5 "><a class="text-orange-300" href="">Learn more <i class="fa-solid fa-angles-right"></i></a></p>
+              </div>
+            </div>
+            <div class="xl:w-1/4 md:w-1/2 p-4">
+              <div class="bg-gray-100 p-6 rounded-lg shadow-2xl">
+                <img class="h-40 rounded w-full object-cover object-center mb-6" src="https://image.wedmegood.com/resized/450X/uploads/project/169594/1641271745_Kerala_Muslim_Wedding_Photography.jpg" alt="content">
+                <!-- <h3 class="tracking-widest text-indigo-500 text-xs font-medium title-font">SUBTITLE</h3> -->
+                <h2 class="text-lg text-gray-900 font-medium title-font mb-4">Kerala Wedding Dance And Cost.</h2>
+                <p class="leading-relaxed text-base">Entertainment plays a significant role in events, and nowadays, wedding dances are gaining immense</p>
+                <p class="mt-6"><a class=" text-orange-300" href="">Learn more <i class="fa-solid fa-angles-right"></i></a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+      <section class="text-gray-600 body-font">
+        <!-- <div class="container px-5 py-24 mx-auto">
+          <div class="flex flex-wrap w-full mb-20">
+            <div class="lg:w-1/2 w-full mb-6 lg:mb-0">
+              <h1 class="sm:text-3xl text-2xl font-medium title-font mb-2 text-gray-900">Our Blog:</h1>
+              <div class="h-1 w-20 bg-indigo-500 rounded"></div>
+            </div>
+            <p class="lg:w-1/2 w-full leading-relaxed text-gray-500">Melodia Events offers a diverse range of blogs that cover topics related to event management and planning. From destination wedding plannings to corporate events, each blog provides valuable insights to help you plan your next event seamlessly.</p>
+          </div> -->
+          <div class="flex flex-wrap -m-4">
+            <div class="xl:w-1/4 md:w-1/2 p-4">
+              <div class="bg-gray-100 p-6 rounded-lg shadow-2xl">
+                <img class="h-40 rounded w-full object-cover object-center mb-6" src="https://eventsmanagementkerala.com/wp-content/uploads/2022/09/WhatsApp-Image-2022-08-26-at-7.53.32-PM-1024x666.webp" alt="content">
+                <!-- <h3 class="tracking-widest text-indigo-500 text-xs font-medium title-font">SUBTITLE</h3> -->
+                <h2 class="text-lg text-gray-900 font-medium title-font mb-4">Kerala Muslim Wedding's</h2>
+                <p class=" mt-6 leading-relaxed text-base">The traditional Muslim wedding rituals are very blessed and colorful.Timeless Celebration: Kerala Muslim Wedding Rituals and Traditions Kerala</p>
+                <p class="mt-12"><a class=" text-orange-300" href="">Learn more <i class="fa-solid fa-angles-right"></i></a></p>
+              </div>
+            </div>
+            <div class="xl:w-1/4 md:w-1/2 p-4">
+              <div class="bg-gray-100 p-6 rounded-lg shadow-2xl">
+                <img class="h-40 rounded w-full object-cover object-center mb-6" src="https://tamarindweddings.com/blog/wp-content/uploads/2013/08/Kerala-Back-Waters-460x306-1.jpg" alt="content">
+                <!-- <h3 class="tracking-widest text-indigo-500 text-xs font-medium title-font">SUBTITLE</h3> -->
+                <h2 class="text-lg text-gray-900 font-medium title-font mb-4">Destination Wedding in Alleppey</h2>
+                <p class=" mt-6 leading-relaxed text-base">Destination Wedding in Alleppey: Enchanting Venues and Affordable Costs Destination weddings are gaining popularity</p>
+                <p class="mt-12"><a class=" text-orange-300" href="">Learn more <i class="fa-solid fa-angles-right"></i></a></p>
+              </div>
+            </div>
+            <div class="xl:w-1/4 md:w-1/2 p-4">
+              <div class="bg-gray-100 p-6 rounded-lg shadow-2xl">
+                <img class="h-40 rounded w-full object-cover object-center mb-6" src="https://cdn0.weddingwire.in/vendor/3828/3_2/640/jpg/5x6b1733_15_413828-165675381463494.jpeg" alt="content">
+                <!-- <h3 class="tracking-widest text-indigo-500 text-xs font-medium title-font">SUBTITLE</h3> -->
+                <h2 class="text-lg text-gray-900 font-medium title-font mb-4">Destination Wedding in Wayanad</h2>
+                <p class="mt-12 leading-relaxed text-base">Looking to host a mesmerizing destination wedding in Wayanad, Kerala? Wayanad, the smallest district</p>
+                <p class="mt-12 "><a class="text-orange-300" href="">Learn more <i class="fa-solid fa-angles-right"></i></a></p>
+              </div>
+            </div>
+            <div class="xl:w-1/4 md:w-1/2 p-4">
+              <div class="bg-gray-100 p-6 rounded-lg shadow-2xl">
+                <img class="h-40 rounded w-full object-cover object-center mb-6" src="https://www.vibemunnar.com/images/vibe-wedding.jpg" alt="content">
+                <!-- <h3 class="tracking-widest text-indigo-500 text-xs font-medium title-font">SUBTITLE</h3> -->
+                <h2 class="text-lg text-gray-900 font-medium title-font mb-4">Destination Wedding in Munnar.</h2>
+                <p class="mt-5 leading-relaxed text-base">Enchanting Venues and Affordable Costs: Destination Wedding in Munnar Destination weddings are becoming increasingly.</p>
+                <p class="mt-12"><a class=" text-orange-300" href="">Learn more <i class="fa-solid fa-angles-right"></i></a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="text-gray-600 body-font">
+        <!-- <div class="container px-5 py-24 mx-auto">
+          <div class="flex flex-wrap w-full mb-20">
+            <div class="lg:w-1/2 w-full mb-6 lg:mb-0">
+              <h1 class="sm:text-3xl text-2xl font-medium title-font mb-2 text-gray-900">Our Blog:</h1>
+              <div class="h-1 w-20 bg-indigo-500 rounded"></div>
+            </div>
+            <p class="lg:w-1/2 w-full leading-relaxed text-gray-500">Melodia Events offers a diverse range of blogs that cover topics related to event management and planning. From destination wedding plannings to corporate events, each blog provides valuable insights to help you plan your next event seamlessly.</p>
+          </div> -->
+          <div class="flex flex-wrap -m-4">
+            <div class="xl:w-1/4 md:w-1/2 p-4">
+              <div class="bg-gray-100 p-6 rounded-lg shadow-2xl">
+                <img class="h-40 rounded w-full object-cover object-center mb-6" src="https://cabbonevents.wordpress.com/wp-content/uploads/2013/07/71.jpg" alt="content">
+                <!-- <h3 class="tracking-widest text-indigo-500 text-xs font-medium title-font">SUBTITLE</h3> -->
+                <h2 class="text-lg text-gray-900 font-medium title-font mb-4">Birthday Parties In kerala</h2>
+                <p class="leading-relaxed text-base">Melodia Events is an event management company in Kerala having special expertise in handling birthday organising which can be for either adults or children.</p>
+                <p class="mt-6"><a class=" text-orange-300" href="">Learn more <i class="fa-solid fa-angles-right"></i></a></p>
+              </div>
+            </div>
+            <div class="xl:w-1/4 md:w-1/2 p-4">
+              <div class="bg-gray-100 p-6 rounded-lg shadow-2xl">
+                <img class="h-40 rounded w-full object-cover object-center mb-6" src="https://image.wedmegood.com/resized/540X/uploads/member/662465/1565243147_49589637_736986839990133_8291520401712873472_n.jpg" alt="content">
+                <!-- <h3 class="tracking-widest text-indigo-500 text-xs font-medium title-font">SUBTITLE</h3> -->
+                <h2 class="text-lg text-gray-900 font-medium title-font mb-4">Kerala Catering Service And Cost.</h2>
+                <p class="leading-relaxed text-base">In Kerala Catering services have become increasingly important for weddings and other events.</p>
+                <p class="mt-12"><a class=" text-orange-300" href="">Learn more <i class="fa-solid fa-angles-right"></i></a></p>
+              </div>
+            </div>
+            <div class="xl:w-1/4 md:w-1/2 p-4">
+              <div class="bg-gray-100 p-6 rounded-lg shadow-2xl">
+                <img class="h-40 rounded w-full object-cover object-center mb-6" src="https://shaadiwish.com/blog/wp-content/uploads/2023/03/Transparent-Tents-1.jpg" alt="content">
+                <!-- <h3 class="tracking-widest text-indigo-500 text-xs font-medium title-font">SUBTITLE</h3> -->
+                <h2 class="text-lg text-gray-900 font-medium title-font mb-4">Enhancing Kerala's Wedding:The magic Of Transparent Tents</h2>
+                <p class=" leading-relaxed text-base">Germen transparent tent wedding events in Kerala In Kerala, the event management companies business has gained</p>
+                <p class="mt-5 "><a class="text-orange-300" href="">Learn more <i class="fa-solid fa-angles-right"></i></a></p>
+              </div>
+            </div>
+            <div class="xl:w-1/4 md:w-1/2 p-4">
+              <div class="bg-gray-100 p-6 rounded-lg shadow-2xl">
+                <img class="h-40 rounded w-full object-cover object-center mb-6" src="https://media.licdn.com/dms/image/D4D12AQHnN_0BN-D2gg/article-cover_image-shrink_600_2000/0/1672565524721?e=2147483647&v=beta&t=pa8Ov_S0R1uxoRTo7NvtsdFt7YfV4syJqfiyefOkZxA" alt="content">
+                <!-- <h3 class="tracking-widest text-indigo-500 text-xs font-medium title-font">SUBTITLE</h3> -->
+                <h2 class="text-lg text-gray-900 font-medium title-font mb-4">Kerala Wedding packages.</h2>
+                <p class=" mt-10 leading-relaxed text-base">The cost and budget of weddings in Kerala varies depending on factors such as</p>
+                <p class="mt-12"><a class=" text-orange-300" href="">Learn more <i class="fa-solid fa-angles-right"></i></a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    
+
+    
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking</title>
+    <link rel="stylesheet" href="./style_1.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+    </head>
+<body class="bg-gray-200">
+
+  <!-- Booking Form -->
+<div class="flex justify-center	gap-8 w-8/12 h-auto bg-gray-100  mx-auto shadow-2xl mt-7">
+    <div class="w-96 ml-29 mt- bg-cover bg-center " style="background-image: url('./images/booking.jpg');" ></div>
+    <div class="w-auto h-auto  mt-20">
+    </div>
+
+
+<div class="max-w-sm  p-6 shadow">
+    <h2 class="font-bold text-2xl mb-3">Book an Event</h2>
+    <form>
+            <div>
+            <label for="" class=" font-bold text-dark-700">Name</label>
+            <input type="text"  class="w-full p-2 border border-gray-300 rounded mt-2 " required>
+            </div>
+            <div>
+            <label for="" class=" font-bold text-dark-700">Email</label>
+            <input type="email"  class="w-full p-2 border border-gray-300 rounded mt-2" required>
+            </div>
+            <div>
+            <label for="" class=" font-bold text-dark-700">Event Date</label>
+            <input type="date"  class="w-full p-2 border border-dark-300 rounded mt-2" required>
+            </div>
+            <div>
+            <label for="" class="font-bold  text-dark-700">Event Type</label>
+            <select id="" class="w-full p-2 border border-dark-300 rounded mt-2" required>
+                <option value="" hidden>Select</option>
+                <option value="">Destination Wedding</option>
+                <option value="">Christian weddings</option>
+                <option value=""> Beach Wedding</option>
+                <option value="">Traditional Weddings</option>
+                <option value="">Elopements</option>
+            </select>
+            </div>
+            <div>
+           <label for="" class="font-bold text-dark-700">Additional Notes</label>
+            <textarea id="text" class="w-full p-5 rounded mt-2"></textarea>
+            </div>
+            <br>
+           <button type="submit" class="w-full bg-gray-600 text-white p-2 rounded">Submit</button>
+           
+    </form>
+</div>
+</div>
+
+
+
+</body>
+</html>
+
+

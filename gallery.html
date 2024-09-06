@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+
+        <!-- Tailwind Css -->
+        <script src="https://cdn.tailwindcss.com"></script>
+        <style>
+        #head{
+          width: 100%;
+          height: 700px;
+          background-image: url("./images/gallery1.jpg");
+          background-repeat: no-repeat;
+          background-size: cover;
+          background-position: center;
+          background-attachment: fixed;
+      }
+      .navbar {
+            backdrop-filter: blur(10px);
+            background-color: rgba(255, 255, 255, 0.2); 
+            transition: background-color 0.3s ease; 
+        }
+
+        .navbar.scrolled {
+            background-color: rgba(29, 45, 216, 0.9); 
+            backdrop-filter: none; 
+        }
+        .para{
+              width: 50%;
+              height: 100px;
+              /* font-size:50px; */
+              color: white;
+              /* font-weight:bolder; */
+              position: absolute;
+              margin-top: 530px;
+              margin-left: 80px;
+            }
+  </style>
+
+</head>
+<body>
+        <!-- Navbar -->
+        <nav id="navbar" class="navbar fixed top-0 left-0 right-0 z-10 p-4 ">
+          <div class="container mx-auto flex justify-between items-center">
+              <a href="#" class="text-white text-lg font-bold">Event Bliss</a>
+              <!-- <div class="hidden md:flex space-x-6"> -->
+                  <ul class="flex flex-col p-4 md:p-0 mt-4 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0  ">
+                      <li>
+                          <a href="./Homepage.html" class="text-black  hover:text-gray-300">Home</a>
+                      </li>
+  
+  
+  
+                      <li class="relative group ">
+                          <a href="">
+                          <a  href="./about.html" class="flex items-center justify-between w-full  text-blak hover:text-gray-300 ">About
+                              <svg class="w-2.5 h-2.5 ml-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"></path>
+                              </svg>
+                          </a>
+                          <!-- Dropdown menu -->
+                          <div class="absolute left-0 z-10 hidden w-44  pt-2 group-hover:block">
+                              <div class=" divide-y divide-gray-100 rounded-lg  ">
+                                  <ul class="py-2 text-l text-black  ">
+                                          <a href="./story.html" class="block px-4 py-2  hover:text-gray-300 ">Story</a>
+                                      </li>
+                                      <li>
+                                          <a href="./gallery.html" class="block px-4 py-2   hover:text-gray-300 ">Our Gallery</a>
+                                      </li>
+                                  </ul>
+                              </div>
+                          </div>
+                      </li>
+                      <li>
+                          <a href="" class="text-blak hover:text-gray-300 ">Wedding</a>
+                      </li>
+                      <li>
+                          <a href="./booking.html" class="text-black hover:text-gray-300 ">Booking</a>
+                      </li>
+                      <li>
+                          <a href="#" class="text-blak hover:text-gray-300 ">Contact</a>
+                      </li>    
+              </div>
+      </nav>
+
+  <div id="head">
+
+    <div class="para">
+      <h1 class="text-5xl	font-medium">Event Bliss</h1>
+    <p class="text-white font-medium			text-lg	mt-5">"At Event Bliss, we believe that events have the power to transform, to inspire, and to leave a lasting impression.
+       That's why we're dedicated to crafting unforgettable experiences that exceed our clients' expectations.</p>
+        </div>
+
+  </div>
+
+
+  <div class="w-2/3 mx-56 mt-8 bg-white text-center rounded-lg	">
+    <h1 class="font-bold text-5xl underline underline-offset-2 text-orange-200	 ">Photo Gallery of Event Bliss</h1>
+    <p class="text-l	font-serif		text-slate-500		text-rose-950	p-4 text-justify mt-6">At Event Bliss, we specialize in crafting unique and memorable events that exceed our clients' expectations. From weddings and galas to corporate events and social gatherings, our team of experts will work with you to bring your vision to life.
+      if you wish to explore our extensive collection, which includes our latest designs, decorations, wedding dance videos, other entertainment, recent wedding photos, and new trends in decorations and other event aspects, kindly contact us or send us a message on WhatsApp or Gmail.
+       We have a dedicated team available to promptly respond to your inquiries, provide additional photos, and address any clarifications you may have. So, don’t hesitate; send us a message now!
+    </p>
+  </div><br>
+
+  <section class="text-gray-600 body-font">
+    <!--<div class="container px-5 py-24 mx-auto">
+     <div class="flex flex-wrap w-full mb-20">
+       <div class="lg:w-1/2 w-full mb-6 lg:mb-0">
+         <h1 class="sm:text-3xl text-2xl font-medium title-font mb-2 text-gray-900">Our Blog:</h1>
+         <div class="h-1 w-20 bg-indigo-500 rounded"></div>
+       </div>
+       <p class="lg:w-1/2 w-full leading-relaxed text-gray-500">Melodia Events offers a diverse range of blogs that cover topics related to event management and planning. From destination wedding plannings to corporate events, each blog provides valuable insights to help you plan your next event seamlessly.</p>
+     </div> -->
+     <div class="flex flex-wrap -m-4">
+       <div class="xl:w-1/4 md:w-1/2 p-4">
+         <div class="bg-gray-100 p-6 rounded-lg shadow-2xl">
+           <img class="h-40 rounded w-full object-cover object-center mb-6" src="https://149385730.v2.pressablecdn.com/wp-content/uploads/2021/04/spring-amond-wedding-inspiration-ideas-ft.jpg" alt="content">
+           <!-- <h3 class="tracking-widest text-indigo-500 text-xs font-medium title-font">SUBTITLE</h3> -->
+           <h2 class="text-lg text-gray-900 font-medium title-font mb-4">A beautifully decorated wedding reception</h2>
+           <!-- <p class=" mt-4 leading-relaxed text-base">Splashes of Tradition: Kerala Haldi Stage Decoration Haldi decoration is an essential</p>
+           <p class="mt-12"><a class=" text-orange-300" href="">Learn more <i class="fa-solid fa-angles-right"></i></a></p> -->
+         </div>
+       </div>
+       <div class="xl:w-1/4 md:w-1/2 p-4">
+         <div class="bg-gray-100 p-6 rounded-lg shadow-2xl">
+           <img class="h-40 rounded w-full object-cover object-center mb-6" src="https://www.oyorooms.com/blog/wp-content/uploads/2018/03/fe-30.jpg" alt="content">
+           <!-- <h3 class="tracking-widest text-indigo-500 text-xs font-medium title-font">SUBTITLE</h3> -->
+           <h2 class="text-lg text-gray-900 font-medium title-font mb-4">A bustling corporate event with happy attendees</h2>
+           <!-- <p class="leading-relaxed text-base">>NO.1 Intimate wedding in Kerala A Global Trend In recent years, Kerala has risen</p>
+           <p class="mt-12"><a class=" text-orange-300" href="">Learn more <i class="fa-solid fa-angles-right"></i></a></p> -->
+         </div>
+       </div>
+       <div class="xl:w-1/4 md:w-1/2 p-4">
+         <div class="bg-gray-100 p-6 rounded-lg shadow-2xl">
+           <img class="h-40 rounded w-full object-cover object-center mb-6" src="https://www.brides.com/thmb/RZOjRr8P6Ox2kZrz9pHYZ_Hr2PM=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/studiothisis-d98ab5539cbe4c20b45474497fcabd3e.jpg" alt="content">
+           <!-- <h3 class="tracking-widest text-indigo-500 text-xs font-medium title-font">SUBTITLE</h3> -->
+           <h2 class="text-lg text-gray-900 font-medium title-font mb-4"> A stunning outdoor gala with breathtaking views</h2>
+           <!-- <p class="leading-relaxed text-base">Timeless Celebration: Kerala Christian Wedding Rituals and Traditions Kerala</p>
+           <p class="mt-5 "><a class="text-orange-300" href="">Learn more <i class="fa-solid fa-angles-right"></i></a></p> -->
+         </div>
+       </div>
+       <div class="xl:w-1/4 md:w-1/2 p-4">
+         <div class="bg-gray-100 p-6 rounded-lg shadow-2xl">
+           <img class="h-40 rounded w-full object-cover object-center mb-6" src="https://media.istockphoto.com/id/1181396290/photo/people-laughing-at-dinner-table.jpg?s=612x612&w=0&k=20&c=6Vyn5ppOp9fLqOeVKL9KCWfNYS69_SchgiOyviVAVuM=" alt="content">
+           <!-- <h3 class="tracking-widest text-indigo-500 text-xs font-medium title-font">SUBTITLE</h3> -->
+           <h2 class="text-lg text-gray-900 font-medium title-font mb-4">A vibrant social gathering with delicious food and drinks</h2>
+           <!-- <p class="leading-relaxed text-base">Entertainment plays a significant role in events, and nowadays, wedding dances are gaining immense</p>
+           <p class="mt-6"><a class=" text-orange-300" href="">Learn more <i class="fa-solid fa-angles-right"></i></a></p> -->
+         </div>
+       </div>
+     </div>
+   </div>
+ </section>
+
+ <section class="text-gray-600 body-font">
+  <div class="container px-5 py-24 mx-auto flex flex-wrap">
+    <!-- <div class="flex w-full mb-20 flex-wrap">
+      <h1 class="sm:text-3xl text-2xl font-medium title-font text-gray-900 lg:w-1/3 lg:mb-0 mb-4">Master Cleanse Reliac Heirloom</h1>
+      <p class="lg:pl-6 lg:w-2/3 mx-auto leading-relaxed text-base">Whatever cardigan tote bag tumblr hexagon brooklyn asymmetrical gentrify, subway tile poke farm-to-table. Franzen you probably haven't heard of them man bun deep jianbing selfies heirloom.</p>
+    </div> -->
+    <div class="flex flex-wrap md:-m-2 -m-1">
+      <div class="flex flex-wrap w-1/2">
+        <div class="md:p-2 p-1 w-1/2">
+          <img alt="gallery" class="w-full object-cover h-full object-center block" src="./images/wedding1.jpg">
+        </div>
+        <div class="md:p-2 p-1 w-1/2">
+          <img alt="gallery" class="w-full object-cover h-full object-center block" src="./images/wedding3.jpg">
+        </div>
+        <div class="md:p-2 p-1 w-full">
+          <img alt="gallery" class="w-full h-full object-cover object-center block" src="./images/wedding5.jpg">
+        </div>
+      </div>
+      <div class="flex flex-wrap w-1/2">
+        <div class="md:p-2 p-1 w-full">
+          <img alt="gallery" class="w-full h-full object-cover object-center block" src="./images/wedding4.jpg">
+        </div>
+        <div class="md:p-2 p-1 w-1/2">
+          <img alt="gallery" class="w-full object-cover h-full object-center block" src="./images/wedding6.jpg">
+        </div>
+        <div class="md:p-2 p-1 w-1/2">
+          <img alt="gallery" class="w-full object-cover h-full object-center block" src="./images/background.jpg">
+        </div>
+      </div>
+    </div><br>
+    <div class="flex flex-wrap md:-m-2 -m-1">
+      <div class="flex flex-wrap w-1/2">
+        <div class="md:p-2 p-1 w-1/2">
+          <img alt="gallery" class="w-full object-cover h-full object-center block " src="./images/bday1.jpg">
+        </div>
+        <div class="md:p-2 p-1 w-1/2">
+          <img alt="gallery" class="w-full object-cover h-full object-center block" src="./images/decoration 2.jpg">
+        </div>
+        <div class="md:p-2 p-1 w-full">
+          <img alt="gallery" class="w-full h-full object-cover object-center block" src="./images/decoration 3.jpg">
+        </div>
+      </div>
+      <div class="flex flex-wrap w-1/2">
+        <div class="md:p-2 p-1 w-full">
+          <img alt="gallery" class="w-full h-full object-cover object-center block" src="./images/food 2.jpg">
+        </div>
+        <div class="md:p-2 p-1 w-1/2">
+          <img alt="gallery" class="w-full object-cover h-full object-center block" src="./images/decoration 2.jpg">
+        </div>
+        <div class="md:p-2 p-1 w-1/2">
+          <img alt="gallery" class="w-full object-cover h-full object-center block" src="./images/decoration1.jpg">
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+ 
+</body>
+</html>

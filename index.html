@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link href="/style.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .navbar {
+            backdrop-filter: blur(10px);
+            background-color: rgba(255, 255, 255, 0.2); 
+            transition: background-color 0.3s ease; 
+        }
+
+        .navbar.scrolled {
+            background-color: rgba(29, 78, 216, 0.9); 
+            backdrop-filter: none; 
+        }
+        .para{
+              width: 50%;
+              height: 100px;
+              /* font-size:50px; */
+              color: white;
+              /* font-weight:bolder; */
+              position: absolute;
+              margin-top: 530px;
+              margin-left: 80px;
+            }
+            .btn{
+                background-color: rgb(203, 106, 130);
+                width: 100px;
+                height: 30px;
+            }
+            .a{
+                width: 100px;
+                height: 50px;
+                background-color: blueviolet;
+            }
+    </style>
+</head>
+<body class="relative">
+
+    <!-- Navbar -->
+    <nav id="navbar" class="navbar fixed top-0 left-0 right-0 z-10 p-4 ">
+        <div class="container mx-auto flex justify-between items-center">
+            <a href="#" class="text-black text-lg font-bold">Event Bliss</a>
+            <!-- <div class="hidden md:flex space-x-6"> -->
+                <ul class="flex flex-col p-4 md:p-0 mt-4 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0  ">
+                    <li>
+                        <a href="#" class="text-black  hover:text-gray-300">Home</a>
+                    </li>
+
+
+
+                    <li class="relative group ">
+                        <a href="">
+                        <a  href="./about.html" class="flex items-center justify-between w-full  text-blak hover:text-gray-300 ">About
+                            <svg class="w-2.5 h-2.5 ml-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"></path>
+                            </svg>
+                        </a>
+                        <!-- Dropdown menu -->
+                        <div class="absolute left-0 z-10 hidden w-44  pt-2 group-hover:block">
+                            <div class=" divide-y divide-gray-100 rounded-lg  ">
+                                <ul class="py-2 text-l text-black  ">
+                                        <a href="#" class="block px-4 py-2  hover:text-gray-300 ">Stories of Event Bliss</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="block px-4 py-2   hover:text-gray-300 ">Our Gallery</a>
+                                    </li>
+                            </div>
+                        </div>
+                    </li>
+                    <!-- <li>
+                        <a href="#" class="text-white hover:text-gray-300">About</a>
+                    </li> -->
+                    <li>
+                        <a href="" class="text-blak hover:text-gray-300 ">Wedding</a>
+                    </li>
+                    <li>
+                        <a href="./booking.html" class="text-black hover:text-gray-300 ">Booking</a>
+                    </li>
+                    <li>
+                        <a href="#" class="text-blak hover:text-gray-300 ">Contact</a>
+                    </li>    
+            </div>
+    </nav>
+
+    <!-- Carousel Container -->
+ <div class="relative w-full h-screen overflow-hidden">
+        <div id="carousel" class="absolute inset-0 flex transition-transform duration-700 ease-in-out">
+            <!-- Slide 1 -->
+            <div class="w-full flex-shrink-0" style="background-image: url('./images/img1.jpg'); background-size: cover; background-position: center;">
+                <img class="opacity-0" src="D:/MEARN Stack/GroupTask/images/backupimg2.avif" alt="">
+                
+                <div class="para">
+                    <h1 class="text-5xl	font-medium">Event Bliss</h1>
+                  <p class="text-white font-medium			text-lg	mt-5">"At Event Bliss, we believe that events have the power to transform, to inspire, and to leave a lasting impression.
+                     That's why we're dedicated to crafting unforgettable experiences that exceed our clients' expectations.</p>
+                     <button class="cursor-pointer transition-all bg-red-400 text-white px-6 py-2 rounded-l"><a href="./login.html">Sign in</a></button>
+                      </div>
+
+            </div>
+            <!-- Slide 2 -->
+            <div class="w-full flex-shrink-0" style="background-image: url('./images/img2.jpg'); background-size: cover; background-position: center;">
+                <img class="opacity-0" src="D:/MEARN Stack/GroupTask/images/backupimg3.jpg" alt="">
+
+                <div class="para">
+                    <h1 class="text-5xl	font-medium">Event Bliss</h1>
+                  <p class="text-white font-medium			text-lg	mt-5">"At Event Bliss, we believe that events have the power to transform, to inspire, and to leave a lasting impression.
+                     That's why we're dedicated to crafting unforgettable experiences that exceed our clients' expectations.</p>
+                     <button class="cursor-pointer transition-all bg-red-400 text-white px-6 py-2 rounded-l"><a href="./login.html">Sign in</a></button>
+                      </div>
+
+            </div>
+            <div class="w-full flex-shrink-0" style="background-image: url('./images/background.jpg'); background-size: cover; background-position: center;">
+                <img class="opacity-0" src="D:/MEARN Stack/GroupTask/images/backupimg3.jpg" alt="">
+
+
+                <div class="para">
+                    <h1 class="text-5xl	font-medium">Event Bliss</h1>
+                  <p class="text-white font-medium			text-lg	mt-5">"At Event Bliss, we believe that events have the power to transform, to inspire, and to leave a lasting impression.
+                     That's why we're dedicated to crafting unforgettable experiences that exceed our clients' expectations.</p>
+                     <button class="cursor-pointer transition-all bg-red-400 text-white px-6 py-2 rounded-l"><a href="./login.html">Sign in</a></button>
+                      </div>
+
+            </div>
+            <div class="w-full flex-shrink-0" style="background-image: url('./images/decoration1.jpg'); background-size: cover; background-position: center;">
+                <img class="opacity-0" src="D:/MEARN Stack/GroupTask/images/backupimg3.jpg" alt="">
+
+                <div class="para">
+                    <h1 class="text-5xl text-black	font-medium">Event Bliss</h1>
+                  <p class="text-black font-medium			text-lg	mt-5">"At Event Bliss, we believe that events have the power to transform, to inspire, and to leave a lasting impression.
+                     That's why we're dedicated to crafting unforgettable experiences that exceed our clients' expectations.</p>
+                     <button class="cursor-pointer transition-all bg-red-400 text-white px-6 py-2 rounded-l"><a href="./login.html">Sign in</a></button>
+                      </div>
+
+            </div>
+        </div>
+        
+        <div class="absolute bottom-5 left-1/2 transform -translate-x-1/2 flex space-x-4 z-10">
+            <button onclick="prevSlide()" class="bg-white p-2 rounded-full">⟨</button>
+            <button onclick="nextSlide()" class="bg-white p-2 rounded-full">⟩</button>
+        </div>
+    </div>
+
+    <script>
+        // Function to change navbar background on scroll
+        function handleScroll() {
+            const navbar = document.getElementById('navbar');
+            if (window.scrollY > 0) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        }
+
+        // Listen for scroll events
+        window.addEventListener('scroll', handleScroll);
+        let currentIndex = 0;
+        const slides = document.querySelectorAll('#carousel > div');
+        const totalSlides = slides.length;
+
+        function showSlide(index) {
+            const offset = index * -100; // Calculate the offset for the carousel
+            document.getElementById('carousel').style.transform = `translateX(${offset}%)`;
+        }
+
+        function nextSlide() {
+            currentIndex = (currentIndex + 1) % totalSlides; // Move to the next slide
+            showSlide(currentIndex);
+        }
+
+        function prevSlide() {
+            currentIndex = (currentIndex - 1 + totalSlides) % totalSlides; // Move to the previous slide
+            showSlide(currentIndex);
+        }
+
+        // Automatically move to the next slide every 5 seconds
+        setInterval(nextSlide, 4000);
+    </script>
+
+    <!-- Introduction Section -->
+    <section class="bg-white py-12">
+        <div class="container mx-auto text-center px-4">
+            <h1 class="text-4xl md:text-6xl font-semibold mb-4">
+                THE FIRST EXCLUSIVE <br> WEDDING PLANNER IN KERALA
+            </h1>
+            <p class="text-lg italic mb-8">
+                Embark Deeper Into An Exquisite Tapestry Of Blissful Union
+            </p>
+            <p class="text-gray-700 max-w-2xl mx-auto leading-relaxed">
+                Looking for a touch of luxury on your big day? Look no further, brides and grooms! If you happen to search for a "luxurious wedding planner in Kerala", Maritus is just a call away. Enter the extraordinary realm of Maritus, the premium wedding planner company based in Kerala. We believe in weaving the magic of love through every service we offer, ensuring a strong bond with our cherished clients.
+            </p>
+            <p class="text-gray-700 max-w-2xl mx-auto leading-relaxed mt-4">
+                When it comes to conjuring up ideas for your dream wedding, Maritus eagerly awaits your creative outpouring! That's why we've earned the esteemed title of being the crème de la crème of wedding planners in Kerala and across India. With a touch of magic, Maritus creates fairy tale weddings that will make your heart sing and your spirit soar. From grand ballroom affairs to romantic garden soirées and whimsical beachside celebrations, our talented team of wedding planners turns dreams into reality. We leave no detail unattended, crafting experiences that will linger in your memories forever.
+            </p>
+        </div>
+    </section>
+    <section class="bg-gray-100 py-12">
+        <div class="container mx-auto text-center px-4">
+            <h2 class="text-4xl font-semibold mb-8">READ OUR BLOG</h2>
+            <p class="text-gray-600 mb-12">Wedding Expert tips, inspiration, and behind-the-scenes stories</p> 
+            <!-- Blog Cards Container -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Blog Card 1 -->
+                <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+                    <img src="./images/blog1.jpg" alt="Blog Image 1" class="w-full h-64 object-cover">
+                    <div class="p-6">
+                        <p class="text-sm text-gray-600 mb-2">Design – </p>
+                        <h3 class="font-semibold text-xl mb-4">FROM VISION TO REALITY – MASTERING THE ART OF WEDDING...</h3>
+                        <p class="text-gray-700">Explore the journey from an idea to the most beautiful day...</p>
+                    </div>
+                </div>
+    
+                <!-- Blog Card 2 -->
+                <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+                    <img src="./images/blog2.jpg" alt="Blog Image 2" class="w-full h-64 object-cover">
+                    <div class="p-6">
+                        <p class="text-sm text-gray-600 mb-2">Trends – </p>
+                        <h3 class="font-semibold text-xl mb-4">WEDDING TRENDS IN 2024: STAY AHEAD OF THE CURVE WITH...</h3>
+                        <p class="text-gray-700">Get insights on what's trending in the wedding world for the coming year...</p>
+                    </div>
+                </div>
+    
+                <!-- Blog Card 3 -->
+                <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+                    <img src="./images/blog3.jpg" alt="Blog Image 3" class="w-full h-64 object-cover">
+                    <div class="p-6">
+                        <p class="text-sm text-gray-600 mb-2">Wedding Events – </p>
+                        <h3 class="font-semibold text-xl mb-4">UNVEILING THE MAGIC OF OUR MOST MEMORABLE WEDDING EVENTS...</h3>
+                        <p class="text-gray-700">A glimpse into some of the most enchanting weddings we've organized...</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+     <!-- get in Touch section -->
+     <section class="bg-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-8">
+                <h2 class="text-4xl font-semibold mb-4">GET IN TOUCH</h2>
+                <p class="text-gray-600">Let's start planning your dream wedding today.</p>
+            </div>
+    
+            <form class="max-w-3xl mx-auto">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+                    <div>
+                        <label class="block text-gray-700 text-sm font-bold mb-2" for="name">Name</label>
+                        <input class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-300 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white" id="name" type="text" placeholder="Your Name">
+                    </div>
+                    <div>
+                        <label class="block text-gray-700 text-sm font-bold mb-2" for="email">E-mail</label>
+                        <input class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-300 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white" id="email" type="email" placeholder="Your E-mail">
+                    </div>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+                    <div>
+                        <label class="block text-gray-700 text-sm font-bold mb-2" for="wedding-date">Wedding Date</label>
+                        <input class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-300 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white" id="wedding-date" type="date">
+                    </div>
+                    <div>
+                        <label class="block text-gray-700 text-sm font-bold mb-2" for="phone">Phone</label>
+                        <input class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-300 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white" id="phone" type="tel" placeholder="Your Phone Number">
+                    </div>
+                </div>
+                <div class="mb-6">
+                    <label class="block text-gray-700 text-sm font-bold mb-2" for="message">Tell Us More</label>
+                    <textarea class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-300 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white h-48 resize-none" id="message" placeholder="Your Message"></textarea>
+                </div>
+                <div class="text-center">
+                    <button class="bg-gray-600 text-white font-bold py-3 px-6 rounded hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-gray-600 focus:ring-opacity-50">Submit</button>
+                </div>
+            </form>
+        </div>
+    </section>
+    <!-- footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Maritus Events and Wedding Planners</h3>
+                    <p class="text-gray-400">
+                        The first exclusive wedding planner in Kerala, dedicated to making your special day truly unforgettable.
+                    </p>
+                    <p class="text-gray-400 mt-4">
+                        © 2024 Maritus. All Rights Reserved.
+                    </p>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white">Home</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">About Us</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Services</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Wedding Stories</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Destination Weddings</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white">Kerala</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Goa</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Rajasthan</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Dubai</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Thailand</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Follow Us</h3>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24"><path d="M24 4.557a9.835 9.835 0 01-2.828.775 4.932 4.932 0 002.165-2.724 9.866 9.866 0 01-3.127 1.196 4.918 4.918 0 00-8.379 4.482 13.953 13.953 0 01-10.141-5.14 4.9 4.9 0 001.523 6.573 4.904 4.904 0 01-2.228-.616c-.054 2.281 1.581 4.415 3.95 4.89a4.935 4.935 0 01-2.224.085 4.922 4.922 0 004.604 3.417 9.868 9.868 0 01-6.102 2.104c-.396 0-.787-.023-1.17-.067a13.945 13.945 0 007.548 2.212c9.056 0 14.01-7.496 14.01-13.986 0-.213-.005-.426-.015-.637A10.025 10.025 0 0024 4.557z"/></svg>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24"><path d="M19.615 2H4.384C3.061 2 2 3.061 2 4.384v15.23C2 20.939 3.061 22 4.384 22h15.23C20.939 22 22 20.939 22 19.615V4.384C22 3.061 20.939 2 19.615 2zM7.998 19.194H5.6V9.473h2.398v9.721zm-1.198-11.14c-.756 0-1.365-.61-1.365-1.364 0-.754.609-1.364 1.365-1.364.755 0 1.364.61 1.364 1.364 0 .754-.609 1.364-1.364 1.364zm12.394 11.14h-2.399v-4.673c0-1.114-.023-2.548-1.554-2.548-1.555 0-1.792 1.217-1.792 2.474v4.747h-2.398V9.473h2.303v1.337h.033c.32-.607 1.101-1.247 2.266-1.247 2.422 0 2.87 1.595 2.87 3.671v5.96z"/></svg>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c-5.523 0-10 4.477-10 10 0 4.418 3.657 8.065 8.215 8.69v-6.147h-2.465v-2.542h2.465v-1.94c0-2.437 1.48-3.773 3.641-3.773 1.035 0 1.926.077 2.185.111v2.536h-1.504c-1.181 0-1.41.561-1.41 1.383v1.684h2.823l-.368 2.542h-2.455v6.147c4.558-.625 8.215-4.272 8.215-8.69 0-5.523-4.477-10-10-10z"/></svg>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0C5.373 0 0 5.373 0 12c0 5.303 3.438 9.8 8.207 11.387v-8.067H5.682V12h2.525V9.356c0-2.5 1.492-3.89 3.779-3.89 1.094 0 2.238.194 2.238.194v2.456h-1.26c-1.243 0-1.631.772-1.631 1.562V12h2.773l-.443 2.319h-2.33v8.067C20.562 21.8 24 17.303 24 12c0-6.627-5.373-12-12-12z"/></svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+</body>
+</html>
